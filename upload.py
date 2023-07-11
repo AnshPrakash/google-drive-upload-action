@@ -2,7 +2,6 @@
 
 import json
 import requests
-import sys
 import os
 
 SCOPES = ["https://www.googleapis.com/auth/drive"]
