@@ -95,7 +95,8 @@ def main():
     res = upload_file(file_to_upload, upload_folder_id)
     print(res)
     print(res.json())
-    print(f'::set-output name=file_id::{res.json()['id']}')
+    file_id = res.json()['id']
+    print(f'::set-output name=file_id::{file_id}')
 
 if __name__ == "__main__":
     main()
