@@ -5,4 +5,4 @@ RUN pip install requests
 
 ADD ./* /
 
-ENTRYPOINT ["python", "/upload.py"]
+CMD ["python", "/upload.py"]
