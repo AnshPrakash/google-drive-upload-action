@@ -32,7 +32,7 @@ This action prints "Hello World" or "Hello" + the name of a person to greet to t
 File_id of the uploaded file on Google drive.
 
 ## Example usage
-
+```
 uses: AnshPrakash/google-drive-upload-action@main
 with:
     client_id: ${{ secrets.CLIENT_ID }}
@@ -40,3 +40,4 @@ with:
     refresh_token: ${{ secrets.REFRESH_TOKEN }}
     file-to-upload: 'file.txt'
     upload-folder: 'some-folder-on-google-drive'
+```
