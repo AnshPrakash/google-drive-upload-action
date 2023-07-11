@@ -1,0 +1,29 @@
+name: "Google Drive Upload Action"
+description: "Uploads file to Google Drive"
+inputs:
+  client_id:
+    description: "Client_id of the Google App"
+    required: True
+  client_secret:
+    description: "Client_secret of the Google App"
+    required: True
+  refresh_token:
+    description: "refresh token acquired for a particular user on whose drive you want to upload"
+    required: True
+  file-to-upload:
+    description: "Name of the file to upload"
+    required: True
+  upload-folder:
+    description: "Drive folder name where file is to be uploaded"
+    required: True
+ouputs:
+  file_id:
+    description: "File_id of the uploaded file on Google drive"
+    
+runs:
+  using: 'docker'
+  image: 'DockerFile'
+  args:
+    - ${{ inputs.file-to-upload }}
+    - ${{ inputs.upload-folder }}
+
