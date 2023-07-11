@@ -23,7 +23,5 @@ ouputs:
 runs:
   using: 'docker'
   image: 'DockerFile'
-  args:
-    - ${{ inputs.file-to-upload }}
-    - ${{ inputs.upload-folder }}
+  
 

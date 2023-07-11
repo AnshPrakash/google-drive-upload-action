@@ -14,8 +14,8 @@ client_id = os.environ['INPUT_CLIENT_ID']
 client_secret = os.environ['INPUT_CLIENT_SECRET']
 
 
-upload_folder = sys.argv[2] 
-file_to_upload = sys.argv[1]
+upload_folder = os.environ['INPUT_UPLOAD-FOLDER']
+file_to_upload = os.environ['INPUT_FILE-TO-UPLOAD']
 
 
 def getToken():
