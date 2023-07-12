@@ -33,7 +33,7 @@ File_id of the uploaded file on Google drive.
 
 ## Example usage
 ```
-uses: AnshPrakash/google-drive-upload-action@main
+uses: AnshPrakash/google-drive-upload-action@v0.1.3-alpha
 with:
     client_id: ${{ secrets.CLIENT_ID }}
     client_secret: ${{ secrets.CLIENT_SECRET }}
